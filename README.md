@@ -8,6 +8,8 @@ Set one TTY to autologin to some unprivileged user, such as `sshuser`. Set the u
 
 All other TTYs should be disabled, save possibly one for maintenance / rescue situations.
 
+SSHing to 127.0.0.1 will su to the superuser `sshadmin`. This can be changed to any privileged user for maintenance purposes.
+
 ### Additional Security ###
 If at all possible, the BIOS / bootorder should be locked, so users cannot gain access to the machine. SSH can also be configured to record UserKnownHostsFile to `/dev/null`.
 
