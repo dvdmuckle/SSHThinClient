@@ -1,5 +1,6 @@
 #!/bin/bash
 clear
+trap 'exit 1' 2 20
 echo "Hello, and welcome to the SSH ThinClient."
 echo "(script written by @ColtonDRG for @dvdmuckle's project)"
 echo
