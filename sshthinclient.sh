@@ -15,7 +15,7 @@ echo "What's the hostname, IP, or domain you want to connect to?"
 echo "(you can add a port like example.com:2222, port 22 is used if none is specified)"
 # Comment the following line to hide the local administration menu access instruction
 echo "(use 127.0.0.1 to access a local administration shell)"
-read -p "Connect to: " read_ssh_sshd
+read -e -p "Connect to: " read_ssh_sshd
 if [ "$read_ssh_sshd" = "" ]; then
   echo "You must enter a hostname!"
   exit 1
@@ -32,7 +32,7 @@ if [ "$SSH_PORT" = "$SSH_HOSTNAME" ]; then
   SSH_PORT="22"
 fi
 echo "What's your username on the remote machine?"
-read -p "Username: " read_ssh_user
+read -e -p "Username: " read_ssh_user
 if [ "$read_ssh_user" = "" ]; then
   echo "You must enter a username!"
   exit 1
