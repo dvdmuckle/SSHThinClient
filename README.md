@@ -1,6 +1,8 @@
 # SSH Thin Client #
 A simple script to create a thin client / dumb terminal based on SSH.
 
+[See it in action](https://dvdmuckle.xyz/index.php/2016/10/25/hooking-up-a-vt420-terminal-to-a-raspberry-pi/)
+
 ### Installation ###
 This is theoretically compatible with any Linux system that uses `bash` and `ssh`, though it has been tested on Arch.
 
